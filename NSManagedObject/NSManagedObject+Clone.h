@@ -9,6 +9,12 @@
 #import <CoreData/CoreData.h>
 
 @interface NSManagedObject (Clone)
+/**
+ E.g. [object cloneInContext:context excludeEntities:@[@"parentProperty"]]
+ @param self the object to clone
+ @param context the NSManagedObjectContext in which to clone
+ @param namesOfEntitiesToExclude make sure you exclude e.g. parent entities that should not be cloned
+ */
 -(NSManagedObject *)cloneInContext:(NSManagedObjectContext *)context exludeEntities:(NSArray *)namesOfEntitiesToExclude;
 -(NSManagedObject *) clone;
 @end
