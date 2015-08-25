@@ -6,3 +6,5 @@ Most categories I have are from external sources, for which I add the link in th
 Categories:
 * NSManagedObject+Clone
   Adds functionality to clone a managed object, and to exclude certain (e.g. parent) linked entities to be cloned.
+* UIImage+RoundedCorner
+  Add a rounded corner to a UIImage
